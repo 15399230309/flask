@@ -17,9 +17,9 @@ def make_log():
 @bp.route('/mail',methods=['GET'])
 def make_mail():
     subject = '这是一个测试邮件'
-    recipients= ['xxxx@163.com']
+    recipients= ['15399230309@163.com']
     body = '我是一个兵，来自老板姓'
     html='<h1>滴答答嘟嘟哒哒，葫芦娃</h1>'
-    cc=['xxxx@qq.com']
+    cc=['1196292988@qq.com']
     send_mail(subject,recipients,body,html,cc)
     return body
